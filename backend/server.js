@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 global.Task = require('./api/models/taskModel');
+global.User = require('./api/models/userModel');
 const routes = require('./api/routes/taskRoutes');
 
 mongoose.Promise = global.Promise;
