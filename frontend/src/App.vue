@@ -7,9 +7,14 @@
            <i class="tasks icon"></i> Tasks
           </router-link>
           <router-link to="/tasks/new" class="item">
-            <i class="plus circle icon"></i> New
+            <i class="plus circle icon"></i> New Task
           </router-link>
-      
+          <router-link to="" class="item">
+            <i class="user icon"></i> Users
+          </router-link>
+          <router-link to="" class="item">
+            <i class="plus circle icon"></i> New User
+          </router-link>
         </div>
       </div>
     </div>
