@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Tasks from './views/Tasks.vue';
 import New from './views/New.vue';
+import Show from './views/Show.vue';
 
 Vue.use(Router);
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/tasks/new',
       name: 'new-task',
       component: New
+    },
+    {
+      path: '/tasks/:id',
+      name: 'show',
+      component: Show
     },
   ]
 });
