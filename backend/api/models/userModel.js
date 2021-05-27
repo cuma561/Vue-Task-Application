@@ -19,7 +19,7 @@ const userSchema = new Schema(
     email: {
     	type: String,
     	required: 'email cannot be blank'
-    }
+    },
     description: {
     	type: String,
     	required: 'description canot be blank'
