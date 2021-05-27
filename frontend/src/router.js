@@ -4,6 +4,7 @@ import Tasks from './views/Task/Tasks.vue';
 import New from './views/Task/New.vue';
 import Show from './views/Task/Show.vue';
 import Edit from './views/Task/Edit.vue';
+import Home from './views/Home.vue';
 
 Vue.use(Router);
 
