@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { api } from '../helpers/helpers';
+import { api } from '../../helpers/helpers';
 export default {
   name: 'show',
   data() {

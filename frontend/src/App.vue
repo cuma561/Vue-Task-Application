@@ -3,6 +3,9 @@
     <div class="ui inverted segment navbar">
       <div class="ui center aligned container">
         <div class="ui large secondary inverted pointing menu compact">
+          <router-link to="/home" exact class="item">
+            <i class="home icon"></i> Home
+          </router-link>
           <router-link to="/tasks" exact class="item">
            <i class="tasks icon"></i> Tasks
           </router-link>
