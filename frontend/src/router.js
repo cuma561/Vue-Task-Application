@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Tasks from './views/Tasks.vue';
-import New from './views/New.vue';
-import Show from './views/Show.vue';
-import Edit from './views/Edit.vue';
+import Tasks from './views/Task/Tasks.vue';
+import New from './views/Task/New.vue';
+import Show from './views/Task/Show.vue';
+import Edit from './views/Task/Edit.vue';
 
 Vue.use(Router);
 
@@ -14,7 +14,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/tasks'
+      name: 'home'
+      redirect: '/home'
     },
     {
       path: '/tasks',
