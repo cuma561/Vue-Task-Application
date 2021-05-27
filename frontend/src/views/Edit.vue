@@ -23,7 +23,7 @@ export default {
     createOrUpdate: async function(task) {
       await api.updatetask(task);
       this.flash('task updated sucessfully!', 'success');
-      this.$router.push(`/tasks/${task._id}`);
+      this.$router.push(`/tasks/`);
     }
   },
   async mounted() {
