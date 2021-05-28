@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>New user</h1>
-    <task-form @createOrUpdate="createOrUpdate"></task-form>
+    <user-form @createOrUpdate="createOrUpdate"></user-form>
   </div>
 </template>
 
