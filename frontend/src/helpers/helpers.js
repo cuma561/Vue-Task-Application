@@ -12,6 +12,7 @@ Vue.use(VueFlashMessage, {
 
 const vm = new Vue();
 const baseURL = 'http://localhost:8080/tasks/';
+const baseURLTwo = 'http://localhost:8080/users/';
 
 const handleError = fn => (...params) =>
   fn(...params).catch(error => {
@@ -37,6 +38,26 @@ export const api = {
   }),
   updatetask: handleError(async payload => {
     const res = await axios.put(baseURL + payload._id, payload);
+    return res.data;
+  }),
+  getuser: handleError(async id => {
+    const res = await axios.get(baseURLTwo + id);
+    return res.data;
+  }),
+  getusers: handleError(async () => {
+    const res = await axios.get(baseURLTwo);
+    return res.data;
+  }),
+  deleteuser: handleError(async id => {
+    const res = await axios.delete(baseURLTwo + id);
+    return res.data;
+  }),
+  createuser: handleError(async payload => {
+    const res = await axios.post(baseURLTwo, payload);
+    return res.data;
+  }),
+  updateuser: handleError(async payload => {
+    const res = await axios.put(baseURLTwo + payload._id, payload);
     return res.data;
   })
 };
