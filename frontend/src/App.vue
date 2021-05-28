@@ -9,13 +9,13 @@
           <router-link to="/tasks" exact class="item">
            <i class="tasks icon"></i> Tasks
           </router-link>
-          <router-link to="/tasks/new" class="item">
+          <router-link to="/tasks/new" exact class="item">
             <i class="plus circle icon"></i> New Task
           </router-link>
-          <router-link to="/users" class="item">
+          <router-link to="/users" exact class="item">
             <i class="user icon"></i> Users
           </router-link>
-          <router-link to="/users/new" class="item">
+          <router-link to="/users/new" exact class="item">
             <i class="plus circle icon"></i> New User
           </router-link>
         </div>
