@@ -5,6 +5,7 @@ import New from './views/Task/New.vue';
 import Show from './views/Task/Show.vue';
 import Edit from './views/Task/Edit.vue';
 import Home from './views/Home.vue';
+import NewUser from './views/User/NewUser.vue';
 
 Vue.use(Router);
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/tasks/:id/edit',
       name: 'edit',
       component: Edit
+    },
+    {
+      path: '/users/new',
+      name: 'new-user',
+      component: NewUser
     }
   ]
 });
