@@ -13,7 +13,7 @@
       <tr v-for="(user, i) in users" :key="i">
         <td>{{ user.nickname }}</td>
         <td width="75" class="center aligned">
-          <router-link :to="{ name: 'show', params: { id: user._id }}">Show</router-link>
+          <router-link :to="{ name: 'user', params: { id: user._id }}">Show</router-link>
         </td>
         <td width="75" class="center aligned">
           <router-link :to="{ name: 'edit', params: { id: user._id }}">Edit</router-link>
