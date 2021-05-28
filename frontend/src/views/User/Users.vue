@@ -16,7 +16,7 @@
           <router-link :to="{ name: 'user', params: { id: user._id }}">Show</router-link>
         </td>
         <td width="75" class="center aligned">
-          <router-link :to="{ name: 'edit', params: { id: user._id }}">Edit</router-link>
+          <router-link :to="{ name: 'edit-user', params: { id: user._id }}">Edit</router-link>
         </td>
         <td width="75" class="center aligned" @click.prevent="onDestroy(user._id)">
           <a :href="`/users/${user._id}`">Delete</a>
