@@ -8,6 +8,7 @@ import Home from './views/Home.vue';
 import NewUser from './views/User/NewUser.vue';
 import Users from './views/User/Users.vue';
 import User from './views/User/User.vue';
+import EditUser from './views/User/EditUser.vue';
 
 Vue.use(Router);
 
@@ -59,6 +60,11 @@ export default new Router({
       path: '/users/:id',
       name: 'user',
       component: User
+    },
+    {
+      path: '/users/:id/edit',
+      name: 'edit-user',
+      component: EditUser
     }
   ]
 });
